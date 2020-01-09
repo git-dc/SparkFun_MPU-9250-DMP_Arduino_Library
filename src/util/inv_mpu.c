@@ -2782,7 +2782,6 @@ int mpu_load_firmware(unsigned short length, const unsigned char *firmware,
 #define LOAD_CHUNK  (16)
     /* unsigned char cur[LOAD_CHUNK], tmp[2]; commented out by Dan, below line added*/
     unsigned char cur[LOAD_CHUNK], fwbuff[LOAD_CHUNK], tmp[2];
-
     if (st.chip_cfg.dmp_loaded)
         /* DMP should only be loaded once. */
         return -1;
